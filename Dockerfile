@@ -1,9 +1,10 @@
-FROM amazoncorretto:17-alpine
+FROM debian
 
-RUN addgroup -S spring && adduser -S spring -G spring
-USER spring:spring
+USER root
 
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+COPY./client.sh /scripts/client.sh
 
-ENTRYPOINT ["java","-Xms128M","-Xmx128M","-Dspring.profiles.active=prod","-jar","/app.jar"]
+RUN apt update && \
+   apt install curl -y && \
+   chmod +x /scripts/client.sh
+ENTRYPOINT ["/scripts/client.sh"]

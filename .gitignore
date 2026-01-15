@@ -1,0 +1,297 @@
+# ==============================================================================
+# GITIGNORE - Forum API Observability
+# ==============================================================================
+
+# ==============================================================================
+# JAVA / MAVEN
+# ==============================================================================
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ==============================================================================
+# IDE - IntelliJ IDEA
+# ==============================================================================
+
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/mongoSettings.xml
+.idea/replstate.xml
+.idea/sonarlint/
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
+
+# IntelliJ module files
+*.iml
+*.ipr
+*.iws
+
+# IntelliJ output
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# ==============================================================================
+# IDE - Eclipse
+# ==============================================================================
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.classpath
+.project
+.externalToolBuilders/
+*.launch
+.factorypath
+.target
+.springBeans
+.sts4-cache
+
+# ==============================================================================
+# IDE - VS Code
+# ==============================================================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# ==============================================================================
+# IDE - NetBeans
+# ==============================================================================
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ==============================================================================
+# DOCKER
+# ==============================================================================
+
+# Docker build artifacts
+*.tar
+docker-compose.override.yml
+
+# ==============================================================================
+# OBSERVABILITY - Prometheus
+# ==============================================================================
+
+# Prometheus data (time series database)
+prometheus/prometheus_data/*/
+prometheus/prometheus_data/chunks_head/
+prometheus/prometheus_data/wal/
+prometheus/prometheus_data/lock
+prometheus/prometheus_data/queries.active
+
+# ==============================================================================
+# OBSERVABILITY - Grafana
+# ==============================================================================
+
+# Grafana database and session data
+grafana/grafana.db
+grafana/alerting/
+grafana/csv/
+grafana/png/
+grafana/plugins/
+grafana/*.log
+
+# ==============================================================================
+# OBSERVABILITY - Alertmanager
+# ==============================================================================
+
+# Alertmanager data
+alertmanager/data/
+
+# ==============================================================================
+# DATABASES
+# ==============================================================================
+
+# PostgreSQL data
+postgres/data/
+*.sql.backup
+
+# H2 Database
+*.h2.db
+*.trace.db
+*.lock.db
+
+# Redis
+dump.rdb
+*.rdb
+
+# ==============================================================================
+# SPRING BOOT
+# ==============================================================================
+
+# Spring Boot DevTools
+.springBootDevtools.trigger
+
+# Application properties with secrets (use environment variables instead)
+application-local.properties
+application-secrets.properties
+
+# ==============================================================================
+# LOGS
+# ==============================================================================
+
+logs/
+*.log
+*.log.*
+log.txt
+
+# ==============================================================================
+# OPERATING SYSTEM
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# SECURITY / SECRETS
+# ==============================================================================
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+
+# Credentials
+credentials.json
+secrets.json
+*-credentials.json
+*-secrets.json
+
+# ==============================================================================
+# GIT
+# ==============================================================================
+
+# Git merge/rebase artifacts
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# ==============================================================================
+# MISC
+# ==============================================================================
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output
+
+# Test results
+test-results/
+test-output/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Claude Code local settings (keep only necessary)
+.claude/settings.local.json
