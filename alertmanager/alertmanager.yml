@@ -1,5 +1,7 @@
 global:
-  slack_api_url: ''
+  # Configure your Slack webhook URL here or via environment variable
+  # slack_api_url: 'https://hooks.slack.com/services/YOUR/WEBHOOK/URL'
+  slack_api_url: '${SLACK_WEBHOOK_URL}'
 
 templates:
 - '/etc/alertmanager/template/*.tmpl'
