@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java -version:*)",
+      "Bash(mvn:*)",
+      "Bash(docker:*)",
+      "Bash(docker compose:*)",
+      "Bash(cmd /c \"java -version\")",
+      "Bash(cmd /c \"mvn -version\")",
+      "Bash(cmd /c \"docker --version\")",
+      "Bash(powershell -Command:*)",
+      "Bash(dir \"C:\\\\Users\\\\isa\\\\IdeaProjects\\\\observabilidade\\\\app-forum-api.tar\")",
+      "Bash(powershell -command \"\\(Get-Item ''C:\\\\Users\\\\isa\\\\IdeaProjects\\\\observabilidade\\\\app-forum-api.tar''\\).Length / 1MB\")"
+    ]
+  }
+}
